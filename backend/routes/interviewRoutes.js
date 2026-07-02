@@ -18,7 +18,7 @@ const upload = multer({
 });
 
 // User onboarding route
-router.post(/api/users, controller.getOrCreateUser);
+router.post('/api/users', controller.getOrCreateUser);
 
 // Resume upload route (extracts text)
 router.post('/upload-resume', upload.single('resume'), controller.uploadResume);
